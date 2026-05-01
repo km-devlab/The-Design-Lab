@@ -1,0 +1,117 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0de52;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #28c5da;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: rgb(7, 39, 136);}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    border: 1px solid #1c185f;
+    border-radius: 4px;
+    background-color: #f0de52;
+    color: rgb(7, 39, 136);
+}
+
+form button {
+    background-color: #82ee48;
+    color: rgb(7, 39, 136);
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c6ef6b;
+}
+
+.expense-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+
+.expense-table th, .expense-table td {
+    padding: 10px;
+    border: 1px solid #2d1076;
+    text-align: left;
+    background-color: rgb(245, 180, 123);
+}
+
+.expense-table th {
+    background-color: #f0de52;
+}
+
+/* Action buttons container (optional spacing) */
+.expense-table td button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Edit button */
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.total-amount {
+    text-align: right;
+    font-size: 18px;
+}
+
+.filter {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #82ee48;
+    color: rgb(7, 39, 136);
+}
