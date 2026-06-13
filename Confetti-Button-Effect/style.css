@@ -1,1 +1,69 @@
+/* Center everything */
+body{
+    margin:0;
+    height:100vh;
 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#1f1f1f;
+}
+
+/* Button styling */
+#celebrateBtn{
+    padding:18px 40px;
+    font-size:20px;
+    color:white;
+
+    border:none;
+    border-radius:50px;
+
+    background:linear-gradient(45deg,#ff0080,#ff8c00);
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+/* Hover effect */
+#celebrateBtn:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 0 10px #ff0080,
+        0 0 25px #ff0080,
+        0 0 50px #ff0080;
+}
+
+/* Click effect */
+#celebrateBtn:active{
+    transform:scale(0.95);
+}
+
+/* Confetti particles */
+.confetti{
+    position:absolute;
+    width:8px;
+    height:16px;
+    animation:burst 1s linear forwards;
+}
+
+/* Animation */
+@keyframes burst {
+
+    from{
+        opacity:1;
+        transform:
+            translate(0,0)
+            rotate(0deg);
+    }
+
+    to{
+        opacity:0;
+        transform:
+            translate(var(--x),var(--y))
+            rotate(720deg);
+    }
+
+}
